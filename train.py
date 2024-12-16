@@ -39,11 +39,10 @@ if __name__ == "__main__":
     ])
 
     params_grid = {
-        "Random_Forest__n_estimators": list(range(80,101, 10)),
+        "Random_Forest__n_estimators": [10,50,100],
         "Random_Forest__criterion": ["squared_error"],
-        "Random_Forest__max_depth": list(range(15, 35, 10)) + [None],
-        "Random_Forest__min_samples_split": list(range(20, 41, 10))
-    }
+        "Random_Forest__max_depth": [3,10, None]
+                }
 
     model = GridSearchCV(pipe, params_grid, n_jobs=-1, cv=3, verbose=3, scoring="r2",)
     model.fit(X_train, y_train)
