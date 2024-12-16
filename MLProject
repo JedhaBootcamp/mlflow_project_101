@@ -1,6 +1,6 @@
-name: californian_housing_market
+name: hyperparameter_tuning
 docker_env:
-  image: jedha/sample-mlflow-server
+  image: jedha/mlflow-project
   environment: [
     "MLFLOW_TRACKING_URI",
     "AWS_ACCESS_KEY_ID",
