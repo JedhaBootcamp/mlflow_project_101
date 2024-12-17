@@ -11,8 +11,8 @@ from sklearn.pipeline import Pipeline
 if __name__ == "__main__":
 
     ### NECESSARY SETUP
-    experiment_name="hyperparameter_tuning"
-    mlflow.set_experiment(experiment_name)
+    #experiment_name="hyperparameter_tuning"
+    #mlflow.set_experiment(experiment_name)
     
     print("training model...")
     
