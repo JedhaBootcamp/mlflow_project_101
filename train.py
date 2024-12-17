@@ -44,7 +44,7 @@ if __name__ == "__main__":
         "Random_Forest__max_depth": [3,10, None]
                 }
 
-    model = GridSearchCV(pipe, params_grid, n_jobs=-1, cv=3, verbose=3, scoring="r2",)
+    model = GridSearchCV(pipe, params_grid, cv=3, verbose=3)
     model.fit(X_train, y_train)
     
     print("...Training Done!")
