@@ -41,7 +41,6 @@ if __name__ == "__main__":
 
         params_grid = {
             "Random_Forest__n_estimators": [10,50,100],
-            "Random_Forest__criterion": ["squared_error"],
             "Random_Forest__max_depth": [3,10, None]
                     }
 
